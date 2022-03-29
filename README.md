@@ -16,7 +16,9 @@ Please tell us what you think about this REST API:
 
 Do you think it can be improved, and if so, in which way?
 
-## Exercise 2 
+----
+
+## Exercise 2
 
 The code is located in `src/main/java/sample/exercise2`, tests are in `src/test/java/sample`.
 
@@ -53,12 +55,18 @@ Some parts are not implemented and have to be implemented so that the tests are 
 
 Complete as much as you can during the allotted time 😃
 
+----
+
 ### Bonus
 
 1) Improve performance
 2) What if I finally want some JPA?
-3) Do you like Vavr? I do like Vavr. How can it improve the code?
+   1) Is there an alternative to JPA?
+   2) Do you know what the cons are with JPA as opposed to an alternative?
+   3) What about the pros?
+3) Do you like Vavr? How can it improve the code?
 4) I want my server to use SSL.
+   1) Can you recommend a way to implement that?
 5) Secure both POST & DELETE endpoints with a JWT.
 
 ----
