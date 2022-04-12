@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import sample.exercise2.model.NewQuote;
 import sample.exercise2.model.Quote;
 import sample.exercise2.model.QuotesStatistics;
-import sample.exercise2.service.FizzBuzzService;
 import sample.exercise2.service.QuotesService;
 
 import java.util.ArrayList;
@@ -18,8 +17,6 @@ import java.util.List;
 public class AppController {
     @Autowired
     QuotesService quotesService;
-    @Autowired
-    FizzBuzzService fizzBuzzService;
 
     @RequestMapping(value = "/quotes", method = RequestMethod.GET)
     public List<Quote> list() {
@@ -55,10 +52,5 @@ public class AppController {
     @RequestMapping(value = "/quotes/{id}", method = RequestMethod.DELETE)
     public Object deleteQuote(@PathVariable("id") String id) {
         throw new UnsupportedOperationException("Not yet implemented");
-    }
-
-    @RequestMapping(value = "/fizz-buzz", method = RequestMethod.GET)
-    public String fizzBuzz(@RequestParam("max") Integer max) {
-        return fizzBuzzService.fizzBuzz(max);
     }
 }
