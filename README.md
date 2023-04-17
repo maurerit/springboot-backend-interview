@@ -26,7 +26,7 @@ The code is located in `src/main/java/sample/exercise2`, tests are in `src/test/
 
 The application uses an in-memory repository to avoid losing time with JPA.
 
-You can use any Java library you want. Vavr and Lombok are already built-in the original `pom.xml`
+You can use any Java library you want. Lombok is already built-in the original `pom.xml`
 
 * `GET /quotes`: List all the quotes.
 * `GET /quotes/statistics`: Return some statistics about the code.
@@ -64,10 +64,9 @@ Complete as much as you can during the allotted time 😃
    1) Is there an alternative to JPA?
    2) Do you know what the cons are with JPA as opposed to an alternative?
    3) What about the pros?
-3) Do you like Vavr? How can it improve the code?
-4) I want my server to use SSL.
+3) I want my server to use SSL.
    1) Can you recommend a way to implement that?
-5) Secure both POST & DELETE endpoints with a JWT.
+4) Secure both POST & DELETE endpoints with a JWT.
 
 ----
 
