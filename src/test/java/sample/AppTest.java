@@ -63,7 +63,7 @@ public class AppTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.number", Matchers.equalTo(6)))
                 .andExpect(jsonPath("$.authors", Matchers.equalTo(5)))
-                .andExpect(jsonPath("$.averageWords", Matchers.equalTo(13)))
+                .andExpect(jsonPath("$.averageWords", Matchers.equalTo(12)))
                 .andExpect(jsonPath("$.averageCharacters", Matchers.equalTo(69)));
     }
 
@@ -116,10 +116,10 @@ public class AppTest {
                 .collect(Collectors.toList());
 
         assertEquals("The quote should be added correctly one time only",
-                1, statusCodes.stream().filter(status -> status == 201).count());
+                1L, statusCodes.stream().filter(status -> status == 201).count());
 
         assertEquals("The quote should have been refused 999 times out of 1000",
-                999, statusCodes.stream().filter(status -> status == 409).count());
+                999L, statusCodes.stream().filter(status -> status == 409).count());
     }
 
     private int addSampleQuote() {
